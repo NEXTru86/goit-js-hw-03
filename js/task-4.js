@@ -1,5 +1,13 @@
 const countTotalSalary = function(employees) {
-  // твой код
+  const wagesArr = Object.values(employees);
+
+  let amountWages = 0;
+
+  for (const wages of wagesArr) {
+    amountWages += wages;
+  }
+
+  return (amountWages);
 };
 
 /*
